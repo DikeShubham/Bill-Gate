@@ -1,3 +1,73 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #333;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  line-height: 1.5rem;
+  margin: 2rem 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.bg-dark {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+.bg-dark h1, .bg-dark h2, .bg-dark h3 {
+  color: #fff;
+}
+.bg-dark p {
+  color: #fff;
+}
+
+.homePage {
+  margin: auto;
+  max-width: 60rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.bg-white {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  place-items: center;
+}
+
+.Quotes {
+  max-width: 30rem;
+  max-height: 30rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.Quotes img {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.Quotes h2 {
+  max-width: 80%;
+  margin: 0% auto;
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
 
 /*# sourceMappingURL=style.css.map */

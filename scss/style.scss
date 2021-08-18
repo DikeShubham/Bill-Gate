@@ -1,0 +1,76 @@
+@use 'units/color';
+@use 'units/fonts';
+
+
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+body{
+  background-color:color.$bigDark;
+  scroll-behavior: smooth;
+}
+
+h1,h2,h3{
+  line-height: 1.5rem;
+  margin: 2rem 0;
+  font-family: fonts.$googleFont;
+  font-size: 2rem;
+}
+p{
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: color.$bigWhite;
+  font-family: fonts.$googleFont;
+
+
+}
+//  SECTION ONE =>
+
+.bg-dark{
+  padding: 10px;
+  h1,h2,h3{
+    color: color.$bigWhite;
+  }
+  p{
+  color: color.$bigWhite;
+
+  }
+  display: flex;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+.homePage{
+  margin: auto;
+  max-width: 60rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+// SECTION TWO =>
+.bg-white{
+  width: 100%;
+  height: 100%;
+  background-color: color.$bigWhite;
+  display: flex;
+  place-items: center;
+} 
+.Quotes{
+  max-width: 30rem;
+  max-height: 30rem;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: column;
+  img{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  h2{
+    max-width: 80%;
+    margin: 0% auto;
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}
