@@ -13,23 +13,42 @@ body{
 }
 
 h1,h2,h3{
-  line-height: 1.5rem;
-  margin: 2rem 0;
+  line-height: 2rem;
+  margin: 1.5rem 0;
   font-family: fonts.$googleFont;
   font-size: 2rem;
 }
-p{
-  font-size: 1.3rem;
+p,li{
+  font-size: 1rem;
   line-height: 1.5rem;
   color: color.$bigWhite;
   font-family: fonts.$googleFont;
-
-
 }
-//  SECTION ONE =>
+li{
+  margin-bottom: .8rem;
+}
+.line{
+  width: 95%;
+  height: 90%;
+  margin:0 auto;
+  display: flex;
+  place-items: center;
+}
+.lineWhite{
+  border: 2px solid color.$bigWhite;
+  border-right: none;
+  border-left: none;
+}
+.lineBlack{
+  border: 2px solid color.$bigDark;
+  border-right: none;
+  border-left: none;
+}
 
+//  SECTION ONE =>
 .bg-dark{
-  padding: 10px;
+  padding: 0 2rem;
+
   h1,h2,h3{
     color: color.$bigWhite;
   }
@@ -39,9 +58,13 @@ p{
   }
   display: flex;
   width: 100%;
-  height: 100%;
+
   place-items: center;
 }
+.fullPage{
+  height: 100%;
+}
+
 .homePage{
   margin: auto;
   max-width: 60rem;
@@ -53,11 +76,12 @@ p{
 .bg-white{
   width: 100%;
   height: 100%;
+  padding: 0 2rem;
   background-color: color.$bigWhite;
   display: flex;
   place-items: center;
 } 
-.Quotes{
+.bill_gates{
   max-width: 30rem;
   max-height: 30rem;
   margin: 0 auto;
@@ -73,4 +97,48 @@ p{
     font-size: 1.2rem;
     line-height: 1.1;
   }
+}
+
+
+//SECTION THREE
+.bg-page{
+  padding: 0 4rem;
+  min-height: 100%;
+ flex-direction: column;
+ justify-content: space-around;
+ .line{
+   width: 100%;
+   height: 2px;
+   background-color: color.$bigWhite;
+   margin: 2rem 0;
+ }
+ .line-bottom{
+   margin-bottom: 2rem;
+ }
+}
+.quotesPage{
+    padding-left: .8rem;
+.Quotes{
+  word-wrap: break-word;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction:column;
+  max-width: 80rem;
+  margin: 0 auto;
+  ul{
+    list-style: none;
+    color:color.$bigWhite;
+    margin: 1rem 0;
+  }
+  li{
+    border-left: 2px solid color.$bigWhite;
+    margin: 1.5rem 0;
+    display: flex;
+    font-family: fonts.$google;
+  }
+
+  .Side_Line{
+    margin-right: .5rem;
+}
+}
 }

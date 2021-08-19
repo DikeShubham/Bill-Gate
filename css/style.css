@@ -10,24 +10,47 @@ body {
 }
 
 h1, h2, h3 {
-  line-height: 1.5rem;
-  margin: 2rem 0;
+  line-height: 2rem;
+  margin: 1.5rem 0;
   font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
 }
 
-p {
-  font-size: 1.3rem;
+p, li {
+  font-size: 1rem;
   line-height: 1.5rem;
   color: #fff;
   font-family: "Space Grotesk", sans-serif;
 }
 
+li {
+  margin-bottom: 0.8rem;
+}
+
+.line {
+  width: 95%;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+  place-items: center;
+}
+
+.lineWhite {
+  border: 2px solid #fff;
+  border-right: none;
+  border-left: none;
+}
+
+.lineBlack {
+  border: 2px solid #333;
+  border-right: none;
+  border-left: none;
+}
+
 .bg-dark {
-  padding: 10px;
+  padding: 0 2rem;
   display: flex;
   width: 100%;
-  height: 100%;
   place-items: center;
 }
 .bg-dark h1, .bg-dark h2, .bg-dark h3 {
@@ -35,6 +58,10 @@ p {
 }
 .bg-dark p {
   color: #fff;
+}
+
+.fullPage {
+  height: 100%;
 }
 
 .homePage {
@@ -47,27 +74,70 @@ p {
 .bg-white {
   width: 100%;
   height: 100%;
+  padding: 0 2rem;
   background-color: #fff;
   display: flex;
   place-items: center;
 }
 
-.Quotes {
+.bill_gates {
   max-width: 30rem;
   max-height: 30rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-.Quotes img {
+.bill_gates img {
   max-width: 80%;
   margin: 0 auto;
 }
-.Quotes h2 {
+.bill_gates h2 {
   max-width: 80%;
   margin: 0% auto;
   font-size: 1.2rem;
   line-height: 1.1;
+}
+
+.bg-page {
+  padding: 0 4rem;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bg-page .line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin: 2rem 0;
+}
+.bg-page .line-bottom {
+  margin-bottom: 2rem;
+}
+
+.quotesPage {
+  padding-left: 0.8rem;
+}
+.quotesPage .Quotes {
+  word-wrap: break-word;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.quotesPage .Quotes ul {
+  list-style: none;
+  color: #fff;
+  margin: 1rem 0;
+}
+.quotesPage .Quotes li {
+  border-left: 2px solid #fff;
+  margin: 1.5rem 0;
+  display: flex;
+  font-family: "Space Grotesk", sans-serif;
+}
+.quotesPage .Quotes .Side_Line {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
